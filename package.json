@@ -26,5 +26,12 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "index.cjs",
+    "index.mjs",
+    "index.d.ts"
+  ]
 }
