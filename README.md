@@ -148,3 +148,13 @@ npm test
 
 `npm run build` builds the package binding and generated JavaScript/type
 declarations. The test suite uses Node's built-in test runner.
+
+## Publishing
+
+The release workflow publishes using [npm trusted publishing](https://docs.npmjs.com/trusted-publishers/).
+Before publishing, configure a GitHub Actions trusted publisher on npm for
+`@bagandev/liquid` and each platform package generated from `napi.config.json`.
+Use owner `bagandev`, repository `liquid`, workflow filename `ci.yml`, no
+environment, and allow direct `npm publish`. Packages must exist on npm before
+their trusted publishers can be configured; publish any new packages manually
+first. A newly configured publisher must publish within two days.
