@@ -1,0 +1,30 @@
+{
+  "name": "@bagandev/liquid",
+  "version": "0.0.1",
+  "description": "Liquid template rendering for Node.js, implemented in Rust",
+  "keywords": [
+    "rust",
+    "liquid"
+  ],
+  "type": "module",
+  "main": "index.cjs",
+  "module": "index.mjs",
+  "types": "index.d.cts",
+  "scripts": {
+    "build": "bash scripts/build.sh build",
+    "local:build": "bash scripts/build.sh local",
+    "test": "node --test test/*.test.js",
+    "npm:dir": "napi create-npm-dirs --config-path napi.config.json"
+  },
+  "devDependencies": {
+    "@emnapi/core": "^2.0.0-alpha.5",
+    "@emnapi/runtime": "^2.0.0-alpha.5",
+    "@napi-rs/cli": "^3.9.1",
+    "emnapi": "^2.0.0-alpha.5",
+    "oxfmt": "^0.76.0",
+    "oxlint": "^1.91.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
