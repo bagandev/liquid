@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 env:
-  APP_NAME: rust-liquid
+  APP_NAME: liquid
   RUST_BACKTRACE: 1
   MACOSX_DEPLOYMENT_TARGET: "10.13"
 
