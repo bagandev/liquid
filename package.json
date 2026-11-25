@@ -1,6 +1,6 @@
 {
   "name": "@bagandev/liquid",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Liquid template rendering for Node.js, implemented in Rust",
   "keywords": [
     "rust",
@@ -10,6 +10,18 @@
   "main": "index.cjs",
   "module": "index.mjs",
   "types": "index.d.cts",
+  "exports": {
+    ".": {
+      "require": {
+        "default": "./index.cjs",
+        "types": "./index.d.ts"
+      },
+      "import": {
+        "default": "./index.mjs",
+        "types": "./index.d.ts"
+      }
+    }
+  },
   "scripts": {
     "build": "bash scripts/build.sh build",
     "local:build": "bash scripts/build.sh local",

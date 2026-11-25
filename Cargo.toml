@@ -1,5 +1,5 @@
 [package]
-name = "rust_liquid"
+name = "liquid"
 version = "0.1.0"
 edition = "2024"
 publish = false
@@ -18,6 +18,6 @@ napi-build = "2"
 
 # Lib
 [lib]
-name = "rust_liquid"
+name = "liquid"
 path = "src/lib.rs"
 crate-type = ["rlib", "cdylib"]

@@ -245,6 +245,20 @@ checksum = "4d9aae57673c1a235149777a74d152f3210ebd3e3b13346d2cdb6809e566bd3c"
 
 [[package]]
 name = "liquid"
+version = "0.1.0"
+dependencies = [
+ "liquid 0.26.11",
+ "liquid-core",
+ "napi",
+ "napi-build",
+ "napi-derive",
+ "serde_json",
+ "serde_yml",
+ "tokio",
+]
+
+[[package]]
+name = "liquid"
 version = "0.26.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2a494c3f9dad3cb7ed16f1c51812cbe4b29493d6c2e5cd1e2b87477263d9534d"
@@ -525,20 +539,6 @@ name = "regex-syntax"
 version = "0.8.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d902046e6a28a1e4c3cab97258a0ce11e994903f01c2d97a9447a0b3df85f4f6"
-
-[[package]]
-name = "rust_liquid"
-version = "0.1.0"
-dependencies = [
- "liquid",
- "liquid-core",
- "napi",
- "napi-build",
- "napi-derive",
- "serde_json",
- "serde_yml",
- "tokio",
-]
 
 [[package]]
 name = "rustc-hash"
