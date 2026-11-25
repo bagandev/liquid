@@ -1,6 +1,6 @@
 {
   "name": "@bagandev/liquid",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Liquid template rendering for Node.js, implemented in Rust",
   "keywords": [
     "rust",
@@ -15,6 +15,11 @@
     "local:build": "bash scripts/build.sh local",
     "test": "node --test test/*.test.js",
     "npm:dir": "napi create-npm-dirs --config-path napi.config.json"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bagandev/liquid"
   },
   "devDependencies": {
     "@emnapi/core": "^2.0.0-alpha.5",
